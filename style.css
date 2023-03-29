@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+header {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  background-color: rgb(19, 1, 75);
+  color: #fff;
+}
+
+.search {
+  padding: 7px 20px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.search::placeholder {
+  color: rgb(19, 1, 75);
+}
+
+.search:hover {
+  transform: scale(1.02);
+}
+
+.btn-search {
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 7px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: rgb(19, 1, 75);
+}
+
+.btn-search:hover {
+  transform: scale(1.02);
+}
+
+.btn-search:active {
+  transform: scale(1.04);
+}
+
+/* -------------- */
+
+.cinemaCards {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.cinemaBox {
+  width: 340px;
+  padding-bottom: 16px;
+  border-radius: 10px;
+  background-color: rgb(56, 24, 151);
+  color: white;
+}
+
+.cinemaBox__img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 340px;
+  background-color: green;
+  border-radius: 10px 10px 0 0;
+}
+
+.cinemaBox__title {
+  font-size: 20px;
+  text-align: center;
+  margin: 16px;
+}
+
+.cinemaBox__year {
+  margin: 14px 14px 0 14px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
