@@ -1,1 +1,1 @@
-<h1><a href = "moviesearchapijs.netlify.app"></a>Movie Search</h1>
+<h1><a href = "moviesearchapijs.netlify.app">Movie Search</a></h1>
